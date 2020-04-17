@@ -1,5 +1,7 @@
 package com.example.sportapp.database.models;
 
+import androidx.annotation.NonNull;
+
 public class MatchModel {
     private int id;
     private String playerOne;
@@ -43,5 +45,11 @@ public class MatchModel {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
         this.score = score;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "" + this.playerOne + " VS " + this.playerTwo + " => " + this.score;
     }
 }

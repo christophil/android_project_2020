@@ -5,6 +5,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_language">Language</string>
     <string name="menu_camera">Camera</string>
+    <string name="menu_matches">Matches</string>
+    <string name="menu_statistics">Statistics</string>
+    <string name="menu_add_match">Add match</string>
 
     <!-- HOME -->
     <string name="home_matches">Matches list</string>
@@ -23,5 +26,10 @@
     <string name="statistics_players">Players number</string>
     <string name="statistics_matches">Matches number</string>
 
+    <!-- MATCHES -->
+    <string name="matches_add_match">Add match</string>
+    <string name="matches_player_one">Player 1</string>
+    <string name="matches_player_two">Player 2</string>
+    <string name="matches_result">Result</string>
 
 </resources>

@@ -11,12 +11,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.sportapp.R;
+import com.example.sportapp.matches.MatchesActivity;
 import com.example.sportapp.statistics.StatisticsActivity;
 
 
 public class HomeButtonsFragment extends Fragment {
 
     Button statisticsButton;
+    Button matchesButton;
 
     public HomeButtonsFragment() {
         // Required empty public constructor
@@ -29,10 +31,18 @@ public class HomeButtonsFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_home_buttons, container, false);
 
         this.statisticsButton = view.findViewById(R.id.home_statistics_button);
+        this.matchesButton = view.findViewById(R.id.home_matches_button);
 
         this.statisticsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(getContext(), StatisticsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        this.matchesButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), MatchesActivity.class);
                 startActivity(i);
             }
         });

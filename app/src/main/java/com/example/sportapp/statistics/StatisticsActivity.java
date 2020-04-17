@@ -14,7 +14,7 @@ import com.example.sportapp.database.SqlLiteDatabaseManager;
 public class StatisticsActivity extends DefaultActivity {
 
     private SqlLiteDatabaseManager database;
-    LinearLayout layout;
+    private LinearLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

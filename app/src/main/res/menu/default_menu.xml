@@ -10,6 +10,18 @@
         android:title="@string/menu_camera" />
 
     <item
+        android:id="@+id/matches"
+        android:title="@string/menu_matches" />
+
+    <item
+        android:id="@+id/statistics"
+        android:title="@string/menu_statistics" />
+
+    <item
+        android:id="@+id/add_match"
+        android:title="@string/menu_add_match" />
+
+    <item
         android:id="@+id/language"
         android:title="@string/menu_language" />
 </menu>

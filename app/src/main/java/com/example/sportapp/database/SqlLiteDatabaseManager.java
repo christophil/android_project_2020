@@ -79,11 +79,54 @@ public class SqlLiteDatabaseManager extends SQLiteOpenHelper {
     }
 
     public int getMatchCount(){
-        return 5;
+
+        int count = 0;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ArrayList<MatchModel> matches = new ArrayList<MatchModel>();
+
+        Cursor cursor = db.rawQuery("select count(*) from "+ this.matchTable.getTABLE_NAME(),null);
+        cursor.moveToFirst();
+        count = cursor.getInt(0);
+        cursor.close();
+
+        return count;
     }
 
     public int getPlayerCount(){
-        return 11;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ArrayList<String> players = new ArrayList<String>();
+        int count = 0;
+
+        Cursor cursor = db.rawQuery("select * from "+ this.matchTable.getTABLE_NAME(),null);
+
+        try {
+            if (cursor.moveToFirst()) {
+                while (!cursor.isAfterLast()) {
+
+                    String playerOne = cursor.getString(cursor.getColumnIndex(this.matchTable.getPLAYER_ONE_COL()));
+                    String playerTwo = cursor.getString(cursor.getColumnIndex(this.matchTable.getPLAYER_TWO_COL()));
+
+                    if(!players.contains(playerOne)){
+                        count = count + 1;
+                        players.add(playerOne);
+                    }
+
+                    if(!players.contains(playerTwo)){
+                        count = count + 1;
+                        players.add(playerTwo);
+                    }
+
+                    cursor.moveToNext();
+                }
+            }
+        } finally {
+            cursor.close();
+        }
+
+        return count;
+
     }
 
     /*

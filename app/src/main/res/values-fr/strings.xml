@@ -5,6 +5,9 @@
     <string name="menu_home">Accueil</string>
     <string name="menu_language">Langue</string>
     <string name="menu_camera">Caméra</string>
+    <string name="menu_matches">Matchs</string>
+    <string name="menu_statistics">Statistiques</string>
+    <string name="menu_add_match">Ajouter un match</string>
 
     <!-- HOME -->
     <string name="home_matches">Liste des matchs</string>
@@ -22,5 +25,11 @@
     <!-- STATISTICS -->
     <string name="statistics_players">Nombre de joueurs</string>
     <string name="statistics_matches">Nombre de matchs</string>
+
+    <!-- MATCHES -->
+    <string name="matches_add_match">Ajouter un match</string>
+    <string name="matches_player_one">Joueur 1</string>
+    <string name="matches_player_two">Joueur 2</string>
+    <string name="matches_result">Resultat</string>
 
 </resources>
