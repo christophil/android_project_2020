@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".language.LanguageFrenchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="205dp"
+            android:layout_height="225dp"
+            android:src="@drawable/french_language" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/language_french"
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/language_french_select_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/language_select_button"
+            android:padding="16dp"
+            android:textColor="#ffffff"
+            android:layout_margin="20dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

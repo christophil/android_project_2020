@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Ping Pong matches management</string>
+
+    <!-- MENU -->
+    <string name="menu_home">Home</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_camera">Camera</string>
+
+    <!-- HOME -->
+    <string name="home_matches">Matches list</string>
+    <string name="home_statistics">Statistics</string>
+
+    <!-- Camera -->
+    <string name="camera_take_picture_button">Take picture</string>
+    <string name="camera_select_picture_button">Show pictures</string>
+
+    <!-- LANGUAGE -->
+    <string name="language_french">French</string>
+    <string name="language_english">English</string>
+    <string name="language_select_button">Select</string>
+
+    <!-- STATISTICS -->
+    <string name="statistics_players">Players number</string>
+    <string name="statistics_matches">Matches number</string>
+
+
+</resources>

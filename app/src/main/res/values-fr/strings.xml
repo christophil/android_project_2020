@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Gestion de matchs de Ping Pong</string>
+
+    <!-- MENU -->
+    <string name="menu_home">Accueil</string>
+    <string name="menu_language">Langue</string>
+    <string name="menu_camera">Caméra</string>
+
+    <!-- HOME -->
+    <string name="home_matches">Liste des matchs</string>
+    <string name="home_statistics">Statistiques</string>
+
+    <!-- Camera -->
+    <string name="camera_take_picture_button">Prendre une photo</string>
+    <string name="camera_select_picture_button">Voir les photos</string>
+
+    <!-- LANGUAGE -->
+    <string name="language_french">Français</string>
+    <string name="language_english">Anglais</string>
+    <string name="language_select_button">Séléctionner</string>
+
+    <!-- STATISTICS -->
+    <string name="statistics_players">Nombre de joueurs</string>
+    <string name="statistics_matches">Nombre de matchs</string>
+
+</resources>
